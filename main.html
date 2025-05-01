@@ -5,78 +5,108 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
+<style>
+	    table{
+			height: 50px;
+			width: 400px;
+		}
+        .middle {
+            border: 1px solid black;
+            border-spacing: 1px;
+            padding: 1px;
+			
+        }
 
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 1px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+	img{
+		width: 100px;
+	}
+    </style>
+</head>
 <body>
-	<table border="1" style="width: 500px">
-		<tr>
-			<td>left</td>
-			<td style="text-align: center">center</td>
-			<td style="text-align: right">right</td>
-		</tr>
-		<tr>
-			<td>left</td>
-			<td style="text-align: center">center</td>
-			<td style="text-align: right">right</td>
-		</tr>
-		<tr>
-			<td>left</td>
-			<td style="text-align: center">center</td>
-			<td style="text-align: right">right</td>
-		</tr>
-		
-	</table>
-	<table border="1" style="height:100px; width: 500px; margin-top:10px; margin-bottom:10px">
-		<tr >
-			<td colspan="6"></td>
-		</tr>
-		<tr>
-			<td rowspan="4"></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			
-			<td></td>
-			<td colspan="3" rowspan="2"></td>
-			<td></td>
-		</tr
-			<tr>
-			
-			<td></td>
-			<td colspan="3" ></td>
-		</tr>
-		<tr>
-			
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td colspan="6"></td>
-		</tr>
-	</table>
-	<table border="1">
-		<tr>
-			<td colspan="3" style="background-color: green; padding:5px"></td>
-		</tr>
-		<tr>
-			<td style="width:100px;"></td>
-			<td style="text-align:center; width: 100px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDyabPCgrlhtBpTRSemqQTAq4JzA6cKGzsqQ&s" alt="nature image"></td>
-			<td style="width:100px;"></td>
-		</tr>
-		<tr>
-			<td colspan="3" style="background-color: blue; padding:5px"></td>
-			
-		</tr>
-	</table>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <h1>HTML Assignment #3</h1>
+
+    <!-- Table 1 -->
+    <table id="table-1" border="1">
+        <tr>
+            <td id="t11">left</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Table 2 -->
+    <table id="table-2" border="1">
+        <tr>
+            <td id="t21" colspan="6">row 1</td>
+        </tr>
+        <tr>
+            <td rowspan="4">2,1</td><td>2,2</td><td>2,3</td><td>2,4</td><td>2,5</td><td>2,6</td>
+        </tr>
+        <tr>
+            <td>3,2</td><td rowspan="2" colspan="3">3,3</td><td>3,6</td>
+        </tr>
+        <tr>
+            <td>4,2</td><td>4,5</td>
+        </tr>
+        <tr>
+            <td>5,2</td><td>5,3</td><td>5,4</td><td>5,5</td><td>5,6</td>
+        </tr>
+        <tr>
+            <td colspan="6">6,1</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Table 3 -->
+    <table id="table-3" border="1">
+        <tr class="green">
+            <td colspan="3">Top 1</td>
+        </tr>
+        <tr>
+            <td>Mid 1</td><td id="t-image" style="text-align: center" >
+                <img src="https://www.shutterstock.com/shutterstock/photos/2420426959/display_1500/stock-photo-madrid-spain-february-league-match-between-getafe-f-c-and-real-madrid-played-in-the-2420426959.jpg" alt="Example Image" >
+            </td><td>Mid 3</td>
+        </tr>
+        <tr class="blue">
+            <td colspan="3">Bot 1</td>
+        </tr>
+    </table>
 
 </body>
 
